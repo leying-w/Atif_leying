@@ -31,7 +31,7 @@ export function AtifInputEnergyUI(props: {
 
         <MultiNumberValueTextField
             error={props.energyParameters.pw_positive_salt.length != blockNumberPlus4}
-            helperText={`pairwise energy parameter for positive salt! Matrix format: row(${blockNumberPlus4}) x column(1)(e.g., all species x positive salt)`}
+            helperText={`pairwise energy parameter for positive salt! Matrix format: row(1) x column(${blockNumberPlus4})(e.g., all species x positive salt)`}
             label={"pw_positive_salt"}
             onMValuesChange={async (mValues) => {
                 newData.pw_positive_salt = mValues
@@ -40,7 +40,7 @@ export function AtifInputEnergyUI(props: {
 
         <MultiNumberValueTextField
             error={props.energyParameters.pw_negative_salt.length != blockNumberPlus4}
-            helperText={`pairwise energy parameter for negative salt! Matrix format: row(${blockNumberPlus4}) x column(1)(e.g., all species x negative salt)`}
+            helperText={`pairwise energy parameter for negative salt! Matrix format: row(1) x column(${blockNumberPlus4})(e.g., all species x negative salt)`}
             label={"pw_negative_salt"}
             onMValuesChange={async (mValues) => {
                 newData.pw_negative_salt = mValues
@@ -49,7 +49,7 @@ export function AtifInputEnergyUI(props: {
 
         <MultiNumberValueTextField
             error={props.energyParameters.pw_positive_counterions.length != blockNumberPlus4}
-            helperText={`pairwise energy parameter for positive counterions! Matrix format: row(${blockNumberPlus4}) x column(1)(e.g., all species x positive counterions)`}
+            helperText={`pairwise energy parameter for positive counterions! Matrix format: row(1) x column(${blockNumberPlus4})(e.g., all species x positive counterions)`}
             label={"pw_positive_counterions"}
             onMValuesChange={async (mValues) => {
                 newData.pw_positive_counterions = mValues
@@ -58,7 +58,7 @@ export function AtifInputEnergyUI(props: {
 
         <MultiNumberValueTextField
             error={props.energyParameters.pw_negative_counterions.length != blockNumberPlus4}
-            helperText={`pairwise energy parameter for negative counterions! Matrix format: row(${blockNumberPlus4}) x column(1)(e.g., all species x negaive counterions)`}
+            helperText={`pairwise energy parameter for negative counterions! Matrix format: row(1) x column(${blockNumberPlus4})(e.g., all species x negaive counterions)`}
             label={"pw_negative_counterions"}
             onMValuesChange={async (mValues) => {
                 newData.pw_negative_counterions = mValues
