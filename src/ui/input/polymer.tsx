@@ -54,7 +54,7 @@ function AtifInputPolymerDataUI(props: {
 
         <TextField type={"number"}
             label={"bending potential for chain stiffness"}
-            helperText={"e.g., 0.2"}
+            helperText={"e.g., 0.2/kBT"}
             value={props.polymerData.bending_potential}
             onChange={async (event) => {
                 newData.bending_potential = doParseFloatValue(event.target.value, props.polymerData.bending_potential)
