@@ -173,7 +173,7 @@ function AppComponent() {
                             setPermitemlenParameters(new AtifPermitemlenParameters(data))
                         }} />
                 } />
-            <InputWrapperBlock name={"iterative"} subTitle={" convergence information"}
+            <InputWrapperBlock name={"Iterative"} subTitle={" convergence information"}
                 innerUI={
                     <AtifInputIterativeUI iterativeParameters={iterativeParameters}
                         onIterativeParametersChange={async (data) => {
