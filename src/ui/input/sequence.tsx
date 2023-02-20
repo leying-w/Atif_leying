@@ -43,7 +43,7 @@ export function AtifInputSequenceUI(props: {
             }} />
 
         <MultiNumberValueTextField
-            label={"block_valencmonomer_valency_in_block_P2"}
+            label={"monomer_valency_in_block_P2"}
             helperText={errorMsg2}
             error={props.sequenceParameters.monomer_valency_in_block_P2.length != props.blockNumber2}
             onMValuesChange={async (values) => {
